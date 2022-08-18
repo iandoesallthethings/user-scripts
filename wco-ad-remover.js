@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WCO Ad Remover
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Autoclicks the remove ads button on WCOstream
 // @author       Ian Edwards
 // @match        https://www.wcostream.com/*

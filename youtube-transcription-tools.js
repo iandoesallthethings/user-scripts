@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YTT: Youtube Transcription Tools
 // @namespace    http://iandoesallthethings.com/
-// @version      0.2
+// @version      0.3
 // @description  Set custom start points using quick key commands
 // @author       Ian Edwards
 // @icon         https://www.google.com/s2/favicons?domain=youtube.com
@@ -91,9 +91,9 @@ const init = () => {
 		resizable: false,
 		position: {
 			my: 'left top',
-			at: 'left top+60',
+			at: 'left top+60'
 		},
-		autoOpen: false,
+		autoOpen: false
 	})
 
 	updateDialog()
@@ -133,7 +133,7 @@ const cuePoints = {
 	KeyQ: 0,
 	KeyW: 0,
 	KeyE: 0,
-	KeyR: 0,
+	KeyR: 0
 }
 
 const commands = {
@@ -144,7 +144,7 @@ const commands = {
 	cue: (event) => {
 		if (cuePoints.hasOwnProperty(event.code))
 			event.shiftKey ? saveCue(event.code) : recallCue(event.code)
-	},
+	}
 }
 
 const saveCue = (keyCode) => (cuePoints[keyCode] = ytplayer.getCurrentTime())
